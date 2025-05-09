@@ -1,0 +1,219 @@
+@font-face {
+    font-family: "Sonic";
+    src: url('fonts/PhantomuffDifficultFont.ttf') format('truetype');
+}
+
+body {
+    background-image: url(images/BG.png);
+}
+
+.header {
+    color: #e53f74;
+    font-family: Sonic;
+    text-align: center;
+    border: #000000;
+    border-width: 7px;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 10%;
+    border-style: solid;
+    background:#280252;
+    display: block;
+    font-size: 50px;
+    height: 125px;
+    line-height: 1px;
+    object-fit: contain;
+}
+
+.nav {
+    color: #3c3eba;
+    font-family: Sonic;
+    text-align: center;
+    position: relative;
+    border: #000000;
+    border-width: 5px;
+    border-style: solid;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-top: 0px;
+    background:#36036d;
+    display: block;
+    font-size: xx-large;
+    object-fit: contain;
+}
+
+.prices1 {
+    color: #3c3eba;
+    font-family: Sonic;
+    text-align: center;
+    position: center;
+    border: #000000;
+    border-width: 5px;
+    border-style: solid;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-top: 0px;
+    display: block;
+    font-size: 50px;
+    background:#280252;
+    background-size: contain;
+    padding-bottom: 1%;
+    object-fit: contain;
+    display: flex; flex-direction: column; align-items: center;
+
+}
+
+.prices2 {
+    color: #3c3eba;
+    font-family: Sonic;
+    text-align: center;
+    position: center;
+    border: #000000;
+    border-width: 5px;
+    border-style: solid;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-top: 0px;
+    display: block;
+    font-size: 50px;
+    background:#36036d;
+    background-size: contain;
+    padding-bottom: 1%;
+    object-fit: contain;
+    display: flex; flex-direction: column; align-items: center;  
+}
+
+h3{
+    color: #683cba;
+    font-family: Sonic;
+    text-align: center;
+    position: center;
+    font-size: 25px;
+    object-fit: contain;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    white-space: pre-wrap;
+    line-height: 25px;
+    overflow-wrap: inherit;
+}
+
+h1 {
+    color: #e53f74;
+    font-family: Sonic;
+    text-align: center;
+    position: center;
+    text-decoration: underline;
+    font-size: 75px;
+    object-fit: contain;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+ul {
+    margin-top: 5px;
+}
+
+li{
+    color: #683cba;
+    font-family: Sonic;
+    text-align: center;
+    position: center;
+    font-size: 35px;
+    object-fit: contain;
+    margin-bottom: 0px;
+    white-space: pre-wrap;
+    line-height: 45px;
+    overflow-wrap: inherit;
+}
+
+@keyframes imageanim {
+    0% {opacity: 0; max-width: 45%; max-height: 45%;}
+    50% {opacity: 0.75; max-width: 65%; max-height: 65%;}
+    100% {opacity: 1;}
+  }
+
+
+img {
+    max-width: 65%;
+    max-height: 65%;
+    border: 5px solid #000000;
+    display: inline-block; 
+    margin: 10px; 
+    animation-name: imageanim;
+    animation-duration: 2s;
+    transition-timing-function: ease;
+    -webkit-user-drag: none;
+
+}
+
+p{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+h5{
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-size: 25px;
+}
+
+
+h4{
+    margin-top: 25px;
+    margin-bottom: -20px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 45%;
+    max-height: auto;
+  }
+
+img:hover {
+    transform: scale(1.05);
+}
+
+img:hover:active {
+    transform: scale(1.35);
+}
+
+figcaption {
+    text-align: justify;
+}
+
+
+
+
+   /*medium */
+@media screen and (max-width: 1300px) {
+    h2 {
+        font-size: 50px;
+        line-height: 0;
+    }
+    .header {
+        height: 100px;
+    }
+   }
+      /*small */
+@media screen and (max-width: 875px) {
+    h2 {
+        font-size: 30px;
+        line-height: -50px;
+    }
+    .header {
+        height: 50px;
+    }
+   }
+
+   /*rlly small */
+@media screen and (max-width: 540px) {
+    h2 {
+        font-size: 25px;
+        line-height: -50px;
+    }
+    .header {
+        height: 50px;
+    }
+   }
